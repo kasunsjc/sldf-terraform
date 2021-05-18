@@ -34,3 +34,8 @@ variable "web_vm_name" {
 variable "vm_size" {
   default = "standard_b2s"
 }
+
+variable "tenent_id" {}
+variable "sub_id" {}
+variable "spn_secret" {}
+variable "spn_app_id" {}
