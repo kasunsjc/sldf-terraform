@@ -1,6 +1,6 @@
 #--compute/main.tf
 
-resource "azurerm_virtual_machine" "web_vm" {
+resource "azurerm_virtual_machine" "create_vm" {
   count = var.vm_count
   location = var.location
   name = "${var.vm_name}${count.index}"
@@ -34,7 +34,7 @@ resource "azurerm_virtual_machine" "web_vm" {
   }
 }
 
-resource "azurerm_network_interface" "web_nic" {
+resource "azurerm_network_interface" "create_nic" {
   name                = "${var.vm_name}-nic-${count.index}"
   location            = var.location
   resource_group_name = var.rg_name
