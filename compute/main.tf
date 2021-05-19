@@ -24,7 +24,7 @@ resource "azurerm_virtual_machine" "web_vm" {
   }
 
   os_profile {
-    computer_name = "${var.web_vm_name}"
+    computer_name = "${var.vm_name}"
     admin_username = "localadmin"
     admin_password = "Password1234!"
   }
