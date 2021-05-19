@@ -35,7 +35,7 @@ resource "azurerm_virtual_machine" "web_vm" {
 }
 
 resource "azurerm_network_interface" "web_nic" {
-  name                = "${var.web_vm_name}-nic-${count.index}"
+  name                = "${var.vm_name}-nic-${count.index}"
   location            = var.location
   resource_group_name = var.rg_name
   count               = var.vm_count
