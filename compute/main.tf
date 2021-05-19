@@ -11,7 +11,7 @@ resource "azurerm_virtual_machine" "web_vm" {
 
   storage_os_disk {
     create_option = "FromImage"
-    name = "webosdisk-${count.index}"
+    name = "${var.vm_name}osdisk-${count.index}"
     managed_disk_type = "Standard_LRS"
   }
 
