@@ -3,7 +3,7 @@
 resource "azurerm_virtual_machine" "web_vm" {
   count = var.vm_count
   location = var.location
-  name = "${var.web_vm_name}${count.index}"
+  name = "${var.vm_name}${count.index}"
   network_interface_ids = [
     "${element(azurerm_network_interface.web_nic.*.id,count.index )}"]
   resource_group_name = var.rg_name

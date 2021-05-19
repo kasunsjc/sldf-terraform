@@ -1,7 +1,7 @@
 
 variable "location" {}
 
-variable "web_vm_name" {}
+variable "vm_name" {}
 
 variable "vm_count" {}
 

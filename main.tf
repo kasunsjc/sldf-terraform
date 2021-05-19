@@ -22,12 +22,23 @@ module "networking" {
   business_nsg_rules = local.buisnessnsgrules
 }
 
-module "compute" {
+module "web" {
   source = "./compute"
   web_subnet_id = module.networking.web_subnet_id
   location = var.location
   rg_name = module.shared.rg_name
   vm_count = var.vm_count
-  web_vm_name = var.web_vm_name
+  vm_name = var.web_vm_name
   vm_size = var.vm_size
+}
+
+module "business" {
+  source = "./compute"
+  web_subnet_id = module.networking.business_subnet_id
+  location = var.location
+  rg_name = module.shared.rg_name
+  vm_count = var.vm_count
+  vm_name = var.business_vm_name
+  vm_size = var.vm_size
+
 }

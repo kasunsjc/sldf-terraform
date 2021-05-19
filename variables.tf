@@ -30,6 +30,9 @@ variable "vm_count" {
 variable "web_vm_name" {
   default = "web"
 }
+variable "business_vm_name" {
+  default = "business"
+}
 
 variable "vm_size" {
   default = "standard_b2s"
