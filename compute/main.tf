@@ -5,7 +5,7 @@ resource "azurerm_virtual_machine" "create_vm" {
   location = var.location
   name = "${var.vm_name}${count.index}"
   network_interface_ids = [
-    "${element(azurerm_network_interface.web_nic.*.id,count.index )}"]
+    "${element(azurerm_network_interface.create_nic.*.id,count.index )}"]
   resource_group_name = var.rg_name
   vm_size = var.vm_size
 
