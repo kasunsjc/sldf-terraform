@@ -1,6 +1,6 @@
 #--compute/main.tf
 
-#Creare virtual machine
+#Creare virtual machine in azure
 
 resource "azurerm_virtual_machine" "create_vm" {
   count = var.vm_count
