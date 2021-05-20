@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../../../DevOps/Terraform/MorethanCertifiedinTerraform/.idea/MorethanCertifiedinTerraform.iml" filepath="$PROJECT_DIR$/../../../DevOps/Terraform/MorethanCertifiedinTerraform/.idea/MorethanCertifiedinTerraform.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TerraformModules.iml" filepath="$PROJECT_DIR$/.idea/TerraformModules.iml" />
     </modules>
   </component>
