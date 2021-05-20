@@ -8,6 +8,7 @@ resource "azurerm_virtual_network" "virtual_network" {
   resource_group_name = var.rg_name
 }
 
+# Virtual Network Subnet
 resource "azurerm_subnet" "web_subnet" {
   name = "${var.web_subnet_name}-subnet"
   resource_group_name = var.rg_name
