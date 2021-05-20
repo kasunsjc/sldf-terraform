@@ -1,5 +1,7 @@
 #--compute/main.tf
 
+#Creare virtual machine
+
 resource "azurerm_virtual_machine" "create_vm" {
   count = var.vm_count
   location = var.location
